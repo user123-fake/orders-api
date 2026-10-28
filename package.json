@@ -1,0 +1,26 @@
+{
+  "name": "orders-api",
+  "version": "1.4.2",
+  "private": true,
+  "description": "Orders and quoting service for the storefront",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon -L src/server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "nodemonConfig": {
+    "watch": ["src"],
+    "ext": "js,json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
