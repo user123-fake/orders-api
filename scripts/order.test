@@ -1,6 +1,3 @@
 const d = pm.iterationData;
 pm.test('discount matches spec', () => pm.expect(pm.response.json().discount_cents).to.eql(Number(d.get('expected_discount_cents')))); 
 pm.test('total matches spec', () => pm.expect(pm.response.json().total_cents).to.eql(Number(d.get('expected_total_cents'))));
-
-
-
