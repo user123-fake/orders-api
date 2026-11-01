@@ -1,5 +1,6 @@
 function computeLineDiscountCents(grossCents, discountPct) {
-  return Math.floor((grossCents * discountPct + 50)/100)
+  const payableRate = 1 - discountPct / 100;
+  return Math.round(grossCents * (1 - payableRate));
 }
 
 function computeLine({ unitPriceCents, quantity, discountPct }) {
